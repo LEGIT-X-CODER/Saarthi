@@ -169,7 +169,7 @@ export default function Community() {
           const directQuery = await getDocs(collection(db, 'community_posts'));
           console.log('Direct query result size:', directQuery.size);
           
-          const directPosts = directQuery.docs.map(doc => ({
+          let directPosts = directQuery.docs.map(doc => ({
             id: doc.id,
             ...doc.data()
           })) as CommunityPost[];
