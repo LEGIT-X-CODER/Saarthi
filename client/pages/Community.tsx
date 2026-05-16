@@ -462,9 +462,8 @@ export default function Community() {
                           : "text-muted-foreground hover:bg-accent"
                       }`}
                     >
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center">
                         <span className="font-medium">{category.name}</span>
-                        <span className="text-sm">{category.count}</span>
                       </div>
                     </button>
                   ))}
